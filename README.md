@@ -19,7 +19,6 @@ Mục tiêu là khai phá dữ liệu để tìm ra những quy luật mua hàng
 * **Bài toán:** Phân tích hành vi mua sắm của khách hàng từ dữ liệu lịch sử giao dịch để tìm ra các sản phẩm nào thường được mua cùng nhau.
 * **Mục tiêu:**
     * Áp dụng thuật toán Apriori để trích xuất các quy tắc kết hợp có ý nghĩa (với các ngưỡng Support, Confidence, Lift cụ thể).
-    * Xây dựng một hàm có khả năng gợi ý các sản phẩm liên quan khi người dùng thêm một (hoặc nhiều) sản phẩm vào giỏ hàng.
 * **Dữ liệu:** Sử dụng bộ dữ liệu `OnlineRetail.xlsx`, chứa 541,909 bản ghi giao dịch.
 
 ---
