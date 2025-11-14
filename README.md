@@ -153,10 +153,10 @@ Dự án được chia thành 3 file Notebook chính, chạy theo thứ tự sau
 | {regency tea plate roses} | {regency tea plate green} | 0.012 | 0.722 | 52.94 |
 | {poppy's playhouse bedroom} | {poppy's playhouse livingroom} | 0.010 | 0.650 | 51.78 |
 ...
-*(Kết quả từ: `Apriori.ipynb`)*
+
 
 * **Trực quan hóa:**
-    * **Biểu đồ Scatter (Support vs Confidence, màu là Lift):** Cho thấy các luật có Lift cao thường có Support thấp.
+    * **Biểu đồ Scatter (Support vs Confidence, cột màu là Lift):** Cho thấy các luật có Lift cao thường có Support thấp.
     * **Đồ thị mạng lưới (Network Graph):** Trực quan hóa mối liên hệ giữa 20 luật hàng đầu, cho thấy các cụm sản phẩm như "bộ tách trà regency" (hồng, xanh, hoa hồng) và "bộ poppy's playhouse" (phòng ngủ, nhà bếp, phòng khách) có liên kết rất chặt chẽ.
     * **Heatmap (Ma trận đồng xuất hiện):** Trực quan hóa tần suất 20 sản phẩm bán chạy nhất xuất hiện cùng nhau, giúp xác định các "cặp đôi" phổ biến.
 
@@ -176,4 +176,4 @@ Dự án được chia thành 3 file Notebook chính, chạy theo thứ tự sau
 ---
 
 ## 8. Kết luận
-Dự án đã tiền xử lý thành công bộ dữ liệu bán lẻ lớn và áp dụng thuật toán Apriori (với `min_support=1.0%`) để tìm ra 267 quy tắc kết hợp có ý nghĩa. Các quy tắc này không chỉ cho thấy các mối liên hệ thú vị (như bộ tách trà, bộ đồ chơi) mà còn có thể được ứng dụng trực tiếp để xây dựng một hệ thống gợi ý sản phẩm đơn giản, giúp tăng doanh số bán hàng.
+Dự án đã tiền xử lý thành công bộ dữ liệu bán lẻ lớn và áp dụng thuật toán Apriori (với `min_support=1.0%`) để tìm ra 267 quy tắc kết hợp có ý nghĩa. Các quy tắc này không chỉ cho thấy các mối liên hệ thú vị (như regency tea plate, poppy's playhouse) mà còn có thể được ứng dụng trực tiếp để xây dựng một hệ thống gợi ý sản phẩm đơn giản, giúp tăng doanh số bán hàng.
