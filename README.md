@@ -18,7 +18,7 @@ Mục tiêu là khai phá dữ liệu để tìm ra những quy luật mua hàng
 ## 1. Giới thiệu dự án
 * **Bài toán:** Phân tích hành vi mua sắm của khách hàng từ dữ liệu lịch sử giao dịch để tìm ra các sản phẩm nào thường được mua cùng nhau.
 * **Mục tiêu:**
-    * Áp dụng thuật toán Apriori để trích xuất các quy tắc kết hợp có ý nghĩa (với các ngưỡng Support, Confidence, Lift cụ thể).
+    * Áp dụng thuật toán Apriori để khái phá dữ liệu, trích xuất các quy tắc kết hợp có ý nghĩa (với các ngưỡng Support, Confidence, Lift cụ thể) hỗ trợ việc gợi ý sản phầm cho người mua hàng
 * **Dữ liệu:** Sử dụng bộ dữ liệu `OnlineRetail.xlsx`, chứa 541,909 bản ghi giao dịch.
 
 ---
@@ -103,7 +103,7 @@ Quy trình làm sạch được áp dụng để chuẩn bị dữ liệu cho ph
         2.  **Confidence (Độ tin cậy):** Tỷ lệ các giao dịch chứa {A, B} trong số các giao dịch chứa {A}. (Đo lường P(B|A)).
         3.  **Lift (Độ nâng):** Đo lường mức độ {A} và {B} xuất hiện cùng nhau có thường xuyên hơn mức ngẫu nhiên hay không. (Lift > 1 cho thấy mối quan hệ tích cực).
 
-* **5.2. Lựa chọn tham số (File: `test_min_support.ipynb`):**
+* **5.2. Lựa chọn tham số (File: `Test_min_support.ipynb`):**
     * Việc chọn `min_support` (ngưỡng hỗ trợ tối thiểu) rất quan trọng. Nếu quá cao, sẽ có ít luật; nếu quá thấp, số lượng luật sẽ bùng nổ và thời gian xử lý lâu.
     * Một thử nghiệm đã được chạy trên các ngưỡng support khác nhau (lọc luật với Lift > 1.0 và Confidence >= 0.5):
 
@@ -114,7 +114,7 @@ Quy trình làm sạch được áp dụng để chuẩn bị dữ liệu cho ph
 | **1.0%** | **166** | **971** | **267** | **22.28s** |
 | 0.5% | 83 | 4074 | 3730 | 55.30s |
 
-Kết quả từ: `test_min_support.ipynb`
+Kết quả từ: `Test_min_support.ipynb`
 
     Quyết định: Chọn `min_support = 0.01` (1.0%) làm ngưỡng hỗ trợ cho phân tích chính thức, vì nó cân bằng giữa số lượng luật tìm được (267 luật) và thời gian thực thi.
 
@@ -131,7 +131,7 @@ Dự án được chia thành 3 file Notebook chính, chạy theo thứ tự sau
     * **Đầu vào:** `OnlineRetail.xlsx` (File dữ liệu gốc).
     * **Đầu ra:** `cleaned_basket.csv` (Ma trận giao dịch nhị phân).
 
-2.  **`test_min_support.ipynb` (Bước thử nghiệm):**
+2.  **`Test_min_support.ipynb` (Bước thử nghiệm):**
     * **Mục đích:** Chạy thử nghiệm Apriori với nhiều ngưỡng `min_support` (2%, 1.5%, 1%, 0.5%) để tìm ra ngưỡng tối ưu.
     * **Đầu vào:** `cleaned_basket.csv`
     * **Đầu ra:** Bảng so sánh (đã trình bày ở Mục 5.2).
