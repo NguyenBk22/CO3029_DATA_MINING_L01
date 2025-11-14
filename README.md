@@ -115,7 +115,7 @@ Quy trình làm sạch được áp dụng để chuẩn bị dữ liệu cho ph
 | **1.0%** | **166** | **971** | **267** | **22.28s** |
 | 0.5% | 83 | 4074 | 3730 | 55.30s |
 
-    *(Kết quả từ: `test_min_support.ipynb`)*
+*(Kết quả từ: `test_min_support.ipynb`)
 
     * Quyết định: Chọn `min_support = 0.01` (1.0%) làm ngưỡng hỗ trợ cho phân tích chính thức, vì nó cân bằng giữa số lượng luật tìm được (267 luật) và thời gian thực thi.
 
