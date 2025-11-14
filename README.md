@@ -117,7 +117,7 @@ Quy trình làm sạch được áp dụng để chuẩn bị dữ liệu cho ph
 
 Kết quả từ: `test_min_support.ipynb`
 
-    * Quyết định: Chọn `min_support = 0.01` (1.0%) làm ngưỡng hỗ trợ cho phân tích chính thức, vì nó cân bằng giữa số lượng luật tìm được (267 luật) và thời gian thực thi.
+    Quyết định: Chọn `min_support = 0.01` (1.0%) làm ngưỡng hỗ trợ cho phân tích chính thức, vì nó cân bằng giữa số lượng luật tìm được (267 luật) và thời gian thực thi.
 
 ---
 
